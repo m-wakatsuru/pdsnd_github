@@ -88,6 +88,8 @@ def load_data(city, month, day):
     return df
 
 def display(df):
+    # You can select whether you need to check 5 more datas.
+    # If you don't need, press 'stop'.
     i = 0
     while True:
         answer = input('Do you want to display 5 more datas?/n(if you don\'t, please input \'stop\'.)')
@@ -215,6 +217,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+        # If you want to restart, please press 'yes'
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break

@@ -1,15 +1,18 @@
-### Date created
-Include the date you created this project and README file.
+### 2019/02/20 (YYYY/MM/DD)
 
-### Project Title
-Replace the Project Title
+### Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+1. You selected the city(Chicago, Washington or New York), month and week day.
+2. You can select if you check 5 more datas. If you don't need, press 'stop'.
+3. Repeated action3 until you press 'stop'.
+4. After 'stop', you can get the statistic datas such as the most popular month, the most popular station, mean time and the user stat.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://github.com/m-wakatsuru/pdsnd_github.git
