@@ -1,5 +1,4 @@
 import time
-import datetime
 import pandas as pd
 import numpy as np
 
@@ -149,16 +148,12 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    df['Start Time'] =  pd.to_datetime(df['Start Time'])
-    df['End Time'] =  pd.to_datetime(df['End Time'])
-
     # TO DO: display total travel time
-    df['Travel Time'] = df['End Time'] - df['Start Time']
-    total_time = df['Travel Time'].sum()
+    total_time = df['Trip Duration'].sum()
     print('Total Travel Time:', total_time)
 
     # TO DO: display mean travel time
-    mean_time = df['Travel Time'].mean()
+    mean_time = df['Trip Duration'].mean()
     print('Average Travel Time:', mean_time)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
